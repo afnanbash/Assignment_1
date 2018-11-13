@@ -1,0 +1,10 @@
+oveCustomer::PrintMenu():{}
+void PrintMenu::act(Restaurant &restaurant) {
+    for(int i=0; i< restaurant.getMenu().size();i++){
+        std::cout << restaurant.getMenu().at(i).getName() << restaurant.getMenu().at(i).getType() << restaurant.getMenu().at(i).getPrice() + "NIS" <<std::endl;
+    }
+}
+std::string PrintMenu::toString() const {
+    return "menu";
+}
+
